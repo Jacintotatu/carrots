@@ -1,0 +1,7 @@
+{
+  "name": "Carrots Área Reservada - Experiencia Digital",
+  "description": "Landing page premium para el restaurante Carrots Área Reservada en Cartagena, diseñada para acceso vía QR/NFC con una estética minimalista y elegante.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
