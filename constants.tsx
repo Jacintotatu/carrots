@@ -21,7 +21,7 @@ import { RestaurantInfo, MenuLink, MenuItem, MenuCategory, GroupMenu, Promotion 
  */
 export const IMAGE_PATHS = {
   // Imagen principal de la cabecera (Recomendado: 2000x1200px)
-  hero: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=2000",
+  hero: "C:\Users\Jacinto\Documents\GitHub\carrots\public\images\principal.jpg",
   
   // Platos de la carta principal (Recomendado: 1200x800px)
   platos: {
