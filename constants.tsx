@@ -13,13 +13,17 @@ import { RestaurantInfo, MenuLink, MenuItem, MenuCategory, GroupMenu, Promotion 
 
 /**
  * ============================================================================
- * 0. GESTIÓN DE IMÁGENES (Ejemplos Premium de Unsplash)
+ * CONFIGURACIÓN DE IMÁGENES (Sustituye las URLs por las tuyas)
  * ============================================================================
- * He sustituido las rutas locales por imágenes de alta resolución para el demo.
- * Para usar tus propias fotos, sube el archivo a 'public/images/...' y cambia la URL.
+ * Puedes usar:
+ * 1. Rutas locales: "/images/platos/mi-foto.jpg" (si las subes a la carpeta public)
+ * 2. URLs externas: "https://mi-servidor.com/foto.jpg"
  */
 export const IMAGE_PATHS = {
+  // Imagen principal de la cabecera (Recomendado: 2000x1200px)
   hero: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=2000",
+  
+  // Platos de la carta principal (Recomendado: 1200x800px)
   platos: {
     croquetas: "https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&q=80&w=1200",
     ensaladilla: "https://images.unsplash.com/photo-1628191010210-a59de33e5941?auto=format&fit=crop&q=80&w=1200",
@@ -33,6 +37,8 @@ export const IMAGE_PATHS = {
     tartaQueso: "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&q=80&w=1200",
     torrija: "https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&q=80&w=1200",
   },
+  
+  // Carta de Vinos
   vinos: {
     juanGil: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=1200",
     muga: "https://images.unsplash.com/photo-1553361371-9bb22f73e7b1?auto=format&fit=crop&q=80&w=1200",
@@ -41,21 +47,26 @@ export const IMAGE_PATHS = {
     chivite: "https://images.unsplash.com/photo-1558001373-7b93ee48fffb?auto=format&fit=crop&q=80&w=1200",
     gramona: "https://images.unsplash.com/photo-1594498653385-d5172b532c00?auto=format&fit=crop&q=80&w=1200",
   },
+  
+  // Experiencias de Maridaje
+  pairings: {
+    ocean: "https://images.unsplash.com/photo-1534080564607-317f65453295?auto=format&fit=crop&q=80&w=1200",
+    earth: "https://images.unsplash.com/photo-1514327605112-b887c0e61c0a?auto=format&fit=crop&q=80&w=1200",
+    sweet: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&q=80&w=1200",
+  },
+  
+  // Menús de Grupos
   grupos: {
     esencia: "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=1200",
     vanguardia: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=1200",
-    reservada: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&q=80&w=1200",
   },
+  
+  // Promociones Temporales
   promos: {
     tardeo: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=1200",
     noche: "https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?auto=format&fit=crop&q=80&w=1200",
     brunch: "https://images.unsplash.com/photo-1496044073248-4c3222839b43?auto=format&fit=crop&q=80&w=1200",
     afterwork: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&q=80&w=1200",
-  },
-  pairings: {
-    ocean: "https://images.unsplash.com/photo-1534080564607-317f65453295?auto=format&fit=crop&q=80&w=1200",
-    earth: "https://images.unsplash.com/photo-1514327605112-b887c0e61c0a?auto=format&fit=crop&q=80&w=1200",
-    sweet: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&q=80&w=1200",
   }
 };
 
@@ -358,7 +369,7 @@ export const PROMOTIONS: Promotion[] = [
 
 /**
  * ============================================================================
- * 7. MENÚ DE MARIDAJE (NEW)
+ * 7. MENÚ DE MARIDAJE
  * ============================================================================
  */
 export const PAIRING_ITEMS: MenuItem[] = [
