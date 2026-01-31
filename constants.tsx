@@ -25,7 +25,7 @@ export const IMAGE_PATHS = {
   
   // Platos de la carta principal (Recomendado: 1200x800px)
   platos: {
-    croquetas: "https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&q=80&w=1200",
+    croquetas: "/images/platos/croqueta.jpg",
     ensaladilla: "https://images.unsplash.com/photo-1628191010210-a59de33e5941?auto=format&fit=crop&q=80&w=1200",
     carpaccio: "https://images.unsplash.com/photo-1551248429-40975aa4de74?auto=format&fit=crop&q=80&w=1200",
     zanahorias: "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?auto=format&fit=crop&q=80&w=1200",
